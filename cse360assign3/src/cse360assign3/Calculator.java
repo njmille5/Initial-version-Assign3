@@ -9,7 +9,7 @@ public class Calculator {
 	private String history;
 	private int total;
 	/**
-	 * Creates a calculator
+	 * Creates a calculator to use
 	 */
 	public Calculator () {
 		total = 0;  // not needed - included for clarity

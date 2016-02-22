@@ -1,5 +1,7 @@
 package cse360assign3;
-
+/**
+ * @author Nicholas Miller
+ */
 import static org.junit.Assert.*;
 
 import org.junit.Test;
