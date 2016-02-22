@@ -74,7 +74,13 @@ public class CalculatorTest {
 
 	@Test
 	public void testGetHistory() {
-		fail("Not yet implemented");
+		Calculator cTest = new Calculator();
+		cTest.divide(5);
+		cTest.add(144);
+		cTest.multiply(12);
+		cTest.subtract(22);
+		assertEquals(cTest.getHistory(), "0 / 5 + 144 * 12 - 22");
 	}
+	
 
 }

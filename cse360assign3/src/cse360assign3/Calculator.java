@@ -6,13 +6,15 @@ package cse360assign3;
  * @version 2/22/2016
  */
 public class Calculator {
-
+	private String history;
 	private int total;
 	/**
 	 * Creates a calculator
 	 */
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		history = "0";
+		
 	}
 	/**access method
 	 * 
@@ -27,6 +29,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total = total + value;
+		history += " + " + value;
 	}
 	/**subtract() subs value from total
 	 * 
@@ -34,6 +37,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total = total - value;
+		history += " - " + value;
 	}
 	/**multiply() multiplies total by value
 	 * 
@@ -41,6 +45,7 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total = total * value;
+		history += " * " + value;
 	}
 	/**divide() divides total by value
 	 * 
@@ -51,6 +56,7 @@ public class Calculator {
 			total = 0;
 		else
 			total = total / value;
+		history += " / " + value;
 	}
 	/** getHistory() returns all input with a " " between
 	 * each operand and number
@@ -58,6 +64,6 @@ public class Calculator {
 	 * @return input string
 	 */
 	public String getHistory () {
-		return "";
+		return history;
 	}
 }
